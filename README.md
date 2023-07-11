@@ -8,6 +8,8 @@ And it supports CJK characters.
 
 ![preview](./preview.png)
 
+![preview_en](./preview_en.png)
+
 ## Usage
 
 Just paste your text in the "text.txt" and open a "Book and Quill" in Minecraft.
