@@ -1,7 +1,7 @@
-import os
 import pyperclip
 import unicodedata
 import time
+import keyboard
 
 def Is_CJK(char):
     # print(unicodedata.name(char))
@@ -40,13 +40,14 @@ while True:
         page = page + file_content[now_index]
         now_index += 1
         i += 1
+    time.sleep(1.5)
     pyperclip.copy(page)
-    time.sleep(1)
+    keyboard.press_and_release('ctrl+v')
+    time.sleep(1.5)
+    keyboard.press_and_release('PgDn')
+    # pyperclip.paste()
     print(page)
     page = ''
 
-
-print(page)
-# 
 
 # print(file_content)
